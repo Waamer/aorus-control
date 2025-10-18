@@ -1,73 +1,29 @@
-# React + TypeScript + Vite
+# Aorus Control
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+After trying out **Linux Fedora** (Pretty good so far) and realizing **Gigabyte kind of hates their customers** (not much Linux support), I scoured the internet until I found this lovely kernel driver made by a user:
 
-Currently, two official plugins are available:
+[tangalbert919/gigabyte-laptop-wmi](https://github.com/tangalbert919/gigabyte-laptop-wmi)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I got it all set up but I wanted a **UI** for it. Hence, I made this:
 
-## React Compiler
+#### Aorus Control
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Yeah. Just a nice-looking **UI** for the kernel driver commands.
 
-## Expanding the ESLint configuration
+## Teck Stack!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React, Vite, Typescript, Election, TailwindCSS, Framer Motion
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Set up
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+It is 3am. I'll get back to this.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Screenshots
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| ![Aorus Control Screenshot 1](https://github.com/user-attachments/assets/f0fdf4d9-4aaa-434b-9d4c-9fc0fdd93619) | ![Aorus Control Screenshot 2](https://github.com/user-attachments/assets/6d2f74bf-3d73-4ccf-b84b-f38c00272d81) |
+|:--:|:--:|
+| *Main Interface* | *System Metrics Panel* |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+> **Note:** Built as a simple graphical front-end for the `gigabyte-laptop-wmi` kernel module. Is NOT affiliated with Aorus or Gigibyte or anything
