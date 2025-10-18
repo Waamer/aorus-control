@@ -8,7 +8,7 @@ I got it all set up but I wanted a **UI** for it. Hence, I made this:
 
 #### Aorus Control
 
-Yeah. Just a nice-looking **UI** for the kernel driver commands.
+Yeah. Just a nice-looking **UI** for the kernel driver commands. May do a slight UI overhaul because it seems too 'gamery' right now idk
 
 ## Teck Stack!
 
