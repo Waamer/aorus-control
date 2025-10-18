@@ -1,6 +1,6 @@
 # Aorus Control
 
-After trying out **Linux Fedora** (Pretty good so far) and realizing **Gigabyte kind of hates their customers** (not much Linux support), I scoured the internet until I found this lovely kernel driver made by a user:
+After trying out **Linux Fedora** (Pretty good so far) and realizing **Gigabyte kind of hates their customers** (not much Linux support)(joke), I scoured the internet until I found this lovely kernel driver made by a user:
 
 [tangalbert919/gigabyte-laptop-wmi](https://github.com/tangalbert919/gigabyte-laptop-wmi)
 
